@@ -199,9 +199,8 @@ export class FrameByFrame {
 
   /* Draw on the canvas as a background cover would do */
   private drawOnCanvas(img: HTMLImageElement): void {
-    // Inspired by http://stackoverflow.com/questions/21961839/simulation-background-size-cover-in-canvas
-
-	if(img) {	
+        // Inspired by http://stackoverflow.com/questions/21961839/simulation-background-size-cover-in-canvas
+  	if(img) {	
 	  const canvasWidth = this.canvasEl.width;
 	  const canvasHeight = this.canvasEl.height;
 
@@ -237,7 +236,6 @@ export class FrameByFrame {
 
 	  this.canvasCtx.drawImage(img, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, canvasWidth, canvasHeight)
 	}
-}
   }
 
   /* Load an Image asynchronously by setting its source */
